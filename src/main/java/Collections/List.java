@@ -11,11 +11,22 @@ public class List<S> {
     public static ArrayList<String> arrayList = new ArrayList<>();
 
     public static void main(String[] args) {
-        addValuesToArrayList(arrayList);
-        printValues(arrayList.stream());
+        arrayList.add("1");
+        arrayList.add("2");
+        arrayList.add("3");
+        arrayList.add("4");
+        arrayList.add("5");
+        arrayList.add("6");
 
-        //Integer Value
-        System.out.println(getInteger(arrayList.stream()));
+
+       // System.out.println(l);
+
+//        addValuesToArrayList(arrayList);
+//        printValues(arrayList.stream());
+//        giveEven(arrayList.stream());
+//
+//        //Integer Value
+//        System.out.println(getInteger(arrayList.stream()));
     }
 
     public static ArrayList<String> addValuesToArrayList(ArrayList<String> someObj) {
@@ -30,6 +41,13 @@ public class List<S> {
     public static java.util.List<Integer> getInteger(Stream<String> stream){
        java.util.List<Integer> x;
       return  x = stream.map(Integer::new).collect(Collectors.toList());
+    }
+
+    public static void giveEven(Stream<String> stream){
+
+       java.util.List<Integer> x=  stream.map(Integer::new).filter(e-> e%2==0).collect(Collectors.toList());
+        x.stream().forEach(System.out::println);
+
     }
 
 }

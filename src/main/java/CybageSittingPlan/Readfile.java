@@ -19,7 +19,7 @@ public class Readfile {
         File file = new File("D:\\PracticeLanguages-20200913T125959Z-001\\PracticeLanguages\\" +
                 "GitHubProjects\\AdvanceJavaPractice\\" +
                 "src\\main\\java\\CybageSittingPlan" +
-                "\\pojo\\employJson.txt");
+                "\\pojo\\employ.json");
 
 //        BufferedReader br = new BufferedReader(new FileReader(file));
 //        String FinalString = "";
@@ -31,7 +31,7 @@ public class Readfile {
 //            FinalString.concat(st);
 
 
-        String data = readFileAsString("D:\\PracticeLanguages-20200913T125959Z-001\\PracticeLanguages\\GitHubProjects\\AdvanceJavaPractice\\src\\main\\java\\CybageSittingPlan\\pojo\\employJson.txt");
+        String data = readFileAsString("D:\\PracticeLanguages-20200913T125959Z-001\\PracticeLanguages\\GitHubProjects\\AdvanceJavaPractice\\src\\main\\java\\CybageSittingPlan\\pojo\\employ.json");
         System.out.println(data);
         return data;
     }
